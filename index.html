@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <form class="form-inline">
+            <div class="btn btn-outline-success hidden" id = "hs-btn"> View High Scores</div>
+            <div id = "timertext">Timer:</div>
+            <div id = "timer"></div>
+
+            <div id = "timertext">Score:</div>
+            <div id = "scorecard"></div>
+        </form>
+
+        
+    </nav>
+
+    <!-- Hidden containers -->
+    <div class = "container">
+        <div id = "question-container" class = "hidden">
+            <div id = "question">Question</div>
+            <div id = "answer-btn" class = "answer-btn">
+            </div>
+            <div id = correctIncorrect></div>
+        </div>
+
+        <div id = "done-container" class = "hidden">
+            <h1 id = "all-done">All Done!</h1>
+            <div id = "final-score"></div>
+            <input id = "initials" title="Enter Initials" class = "enter-initials"></input>
+            <button id = "submit-btn" class="submit-btn">Submit</button>
+        </div>
+
+        <div id = "highscore-container" class = "hidden">
+            
+            <h1 id = "highscore">Scoreboard</h1>
+            <ol id = "highlist"></ol>
+            <button id = "back-btn">Back</button>
+
+        </div>
+
+
+        <div class = "controls">
+            <!-- Start button for the game itself -->
+            <button id = "start-btn" class = "start-btn btn">Start</button>
+        </div>
+    </div>
+
+<script defer src="script.js"></script>
+
+    
+</body>
+</html>
